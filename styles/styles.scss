@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    #content{
+        height: 100vh;
+        background-image: url(/images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position:40% 0%;
+        background-color: hsl(257, 40%, 49%);
+        display: flex;
+        flex-direction: column;
+        .header{
+            flex-basis: 15vh;
+            width: 100%;
+            padding: 8%;
+            .logo{
+                width: 60%;
+                img{
+                    width: 70%;
+                }
+            }
+        }
+        .photo{
+            flex-basis: 35vh;
+            .photo-container{
+                height: 100%;
+                width: 100%;
+                background-image: url(/images/illustration-mockups.svg);
+                background-size: 80%;
+                background-repeat: no-repeat;
+                background-position: 50% 0;
+            }
+        }
+        .intro{
+            flex-basis:35vh;
+            text-align: center;
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .title{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: white;
+                letter-spacing: 1px;
+                flex-basis: 20%;
+                margin-bottom: 10px;
+                
+            }
+            p{
+                flex-basis: 60%;
+                width: 80%;
+                margin: 0 auto;
+                font-size: 14px;
+                line-height: 26px;
+                color: rgba(255,255,255,0.7)
+            }
+            button{
+                flex-grow: 1;
+                width: 60%;
+                margin: 0 auto;
+                border: 0;
+                border-radius: 20px;
+                color: hsl(257, 40%, 49%);
+                height: 40px;
+                box-shadow: 0 4px 2px 1px rgba(0,0,0,0.3);
+            }
+        }
+
+        .social{
+            flex-basis: 15vh;
+            
+        }
+      }
+}
+
+footer{
+    display: none;
+}
