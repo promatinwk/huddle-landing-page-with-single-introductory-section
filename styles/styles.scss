@@ -78,7 +78,22 @@ body{
 
         .social{
             flex-basis: 15vh;
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                padding: 5px;
+                i{
+                 width: 35px;
+                 text-align: center;
+                 line-height: 35px;
+                 height: 35px;
+                 display: block;
+                 border: 1px solid white;
+                 border-radius: 50%;
+                 color: white;
+                }
+            }
         }
       }
 }

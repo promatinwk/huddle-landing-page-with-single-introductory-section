@@ -109,6 +109,30 @@ body #content .intro button {
 body #content .social {
   -ms-flex-preferred-size: 15vh;
       flex-basis: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #content .social div {
+  padding: 5px;
+}
+
+body #content .social div i {
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  display: block;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
 }
 
 footer {
