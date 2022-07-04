@@ -101,3 +101,102 @@ body{
 footer{
     display: none;
 }
+
+@media screen and (min-width:1000px) {
+    body{
+        overflow-y: hidden;
+        #content{
+        background-image: url('/images/bg-desktop.svg');
+        background-size: 90%;
+        background-position: -10% 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+                "header header"
+                "photo intro"
+                "social social";
+            .header{
+                grid-area: header;
+                padding: 0;
+                height: 15vh;
+                .logo{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    img{
+                        margin-left: 8%;
+                        height: 35%;
+                        width: auto;
+                    }
+                }
+
+            }
+            .photo{
+                height: 70vh;
+                grid-area:photo;
+                .photo-container{
+                    height: 120%;
+                    width:auto;
+                }
+            }
+            .intro{
+                grid-area:intro;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                height: 100%;
+                padding-right: 20%;
+                margin-top: 5%;
+                .title{
+                    flex-basis: 20%;
+                    margin-bottom: 5%;
+                    font-size: 48px;
+                    text-align: left;
+
+                }
+                p{
+                    padding-right: 5%;
+                    flex-basis: 20%;
+                    font-size: 22px;
+                    width: 100%;
+                    text-align: left;
+                    line-height: 40px;
+                }
+                button{
+                    flex-grow: 0;
+                    height: 50px;
+                    width: 30%;
+                    border-radius: 25px;
+                    text-align: center;
+                    margin-left: 0;
+                    font-size: 16px;
+                    cursor: pointer;
+                    box-shadow: 0 4px 4px 2px rgba(0,0,0,0.3);
+                    &:hover{
+                        background-color: hsl(300, 69%, 71%);
+                        color: white;
+                    }
+                }
+            }
+            .social{
+                grid-area:social;
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 15%;
+                margin-bottom: 2%;
+                cursor:pointer;
+                div{
+                    i:hover{
+                        color: hsl(300, 69%, 71%);
+                        border-color: hsl(300, 69%, 71%);
+                    }
+                }
+            }
+        
+        }
+          
+    }
+    
+}
